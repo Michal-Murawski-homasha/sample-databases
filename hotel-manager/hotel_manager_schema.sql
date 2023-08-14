@@ -131,6 +131,7 @@ CREATE TABLE employees (
 	employee_nip VARCHAR(16) NOT NULL,
 	employee_phone VARCHAR(24),
 	employee_email VARCHAR(255) NOT NULL,
+	employee_password VARCHAR(255) NOT NULL,
 	city_id INT,
 	city_code VARCHAR(8) NOT NULL,
 	street_id INT,
