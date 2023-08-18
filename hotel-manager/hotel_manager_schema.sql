@@ -12,8 +12,8 @@
 --     CONNECTION LIMIT = -1
 --     IS_TEMPLATE = False;
 
-DROP TABLE IF EXISTS city CASCADE;
-DROP TABLE IF EXISTS street CASCADE;
+DROP TABLE IF EXISTS cities CASCADE;
+DROP TABLE IF EXISTS streets CASCADE;
 DROP TABLE IF EXISTS clients CASCADE;
 DROP TABLE IF EXISTS companies CASCADE;
 DROP TABLE IF EXISTS departments CASCADE;
@@ -32,14 +32,14 @@ DROP TABLE IF EXISTS rooms CASCADE;
 DROP TABLE IF EXISTS feature_of_room CASCADE;
 DROP TABLE IF EXISTS reservations CASCADE;
 DROP TABLE IF EXISTS invoices CASCADE;
-	
-CREATE TABLE city (
+
+CREATE TABLE cities (
 	city_id SERIAL NOT NULL,
 	city_name VARCHAR(255) NOT NULL,
 	PRIMARY KEY (city_id)
 );
 
-CREATE TABLE street (
+CREATE TABLE streets (
 	street_id SERIAL NOT NULL,
 	street_name VARCHAR(255) NOT NULL,
 	PRIMARY KEY (street_ID)
@@ -63,10 +63,10 @@ CREATE TABLE clients (
 	UNIQUE (client_email),
 	CONSTRAINT fk_client_city
 		FOREIGN KEY (city_id)
-			REFERENCES city (city_id),
+			REFERENCES cities (city_id),
 	CONSTRAINT fk_client_street
 		FOREIGN KEY (street_id)
-			REFERENCES street (street_id)
+			REFERENCES streets (street_id)
 );
 
 CREATE TABLE companies (
@@ -85,10 +85,10 @@ CREATE TABLE companies (
 	UNIQUE (company_email),
 	CONSTRAINT fk_company_city
 		FOREIGN KEY (city_id)
-			REFERENCES city (city_id),
+			REFERENCES cities (city_id),
 	CONSTRAINT fk_company_street
 		FOREIGN KEY (street_id)
-			REFERENCES street (street_id)
+			REFERENCES streets (street_id)
 );
 
 CREATE TABLE departments (
@@ -142,10 +142,10 @@ CREATE TABLE employees (
 	UNIQUE (employee_email),
 	CONSTRAINT fk_employee_city
 		FOREIGN KEY (city_id)
-			REFERENCES city (city_id),
+			REFERENCES cities (city_id),
 	CONSTRAINT fk_employee_street
 		FOREIGN KEY (street_id)
-			REFERENCES street (street_id),
+			REFERENCES streets (street_id),
 	CONSTRAINT fk_employee_department
 		FOREIGN KEY (department_id)
 			REFERENCES departments (department_id)
