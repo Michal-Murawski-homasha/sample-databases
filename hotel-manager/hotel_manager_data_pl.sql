@@ -190,7 +190,7 @@ INSERT INTO clients VALUES (99, 'Kazimierz', 'Pietrzak', '111-111-11-99', '111-1
 INSERT INTO clients VALUES (100, 'Martyna', 'Pietrzak', '111-111-11-100', '111-112-001', 'martyna_pietrzak@mail.test', TRUE, 17, '34-315', 50, '100', '1000A', 5);
 
 -- company_id, company_name, company_regon, company_nip, company_phone, company_email, city_id, street_id, street_number, locale_number
-INSERT INTO companies VALUES (1, 'WizjaTech Polska', '999999991', '999-999-99-91', '999-999-991', 'wizjaTech_polska@mail.test', 1, '15-001', 1, '951', '1A');
+INSERT INTO companies VALUES (1, 'WizjaTech Polska', '999999991', '999-999-99-91', '999-999-991', 'wizjatech_polska@mail.test', 1, '15-001', 1, '951', '1A');
 INSERT INTO companies VALUES (2, 'Kowalski & Synowie Budownictwo', '999999992', '999-999-99-92', '999-999-992', 'kowalski_synowie_budownictwo@mail.test', 2, '43-300', 2, '952', '2A');
 INSERT INTO companies VALUES (3, 'AgroNowak Sp. z o.o.', '999999993', '999-999-99-93', '999-999-993', 'agronowak@mail.test', 3, '85-105', 3, '953', '3A');
 INSERT INTO companies VALUES (4, 'Smakowita Pasja Cukiernia', '999999994', '999-999-99-94', '999-999-994', 'smakowita_pasja_cukiernia@mail.test', 4, '80-831', 4, '954', '4A');
