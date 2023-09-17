@@ -8,6 +8,8 @@ For MySQL, just load the hotel_manager_schema_mysql.sql file (in phpmyadmin you 
 
 ### Structure of the hotel
 
+![sample-database - Hotel Manager](hotel-manager/img/structure_of_the_hotel.png)
+
 1. The administrator manages (adds, deletes) manager/manager accounts and their permissions.
 2. managers can be assigned to individual cells or departments.
 3. Managers manage employee and associate accounts and their permissions.
