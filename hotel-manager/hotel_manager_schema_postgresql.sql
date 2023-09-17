@@ -1,17 +1,3 @@
--- Database: hotel_manager
-
--- DROP DATABASE IF EXISTS hotel_manager;
-
--- CREATE DATABASE hotel_manager
---     WITH
---     OWNER = postgres
---     ENCODING = 'UTF8'
---     LC_COLLATE = 'Polish_Poland.1250'
---     LC_CTYPE = 'Polish_Poland.1250'
---     TABLESPACE = pg_default
---     CONNECTION LIMIT = -1
---     IS_TEMPLATE = False;
-
 DROP TABLE IF EXISTS cities CASCADE;
 DROP TABLE IF EXISTS streets CASCADE;
 DROP TABLE IF EXISTS clients CASCADE;
